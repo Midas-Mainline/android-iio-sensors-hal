@@ -18,7 +18,7 @@
 #include <dirent.h>
 #include <stdlib.h>
 #include <fcntl.h>
-#include <utils/Log.h>
+#include <log/log.h>
 #include <sys/stat.h>
 #include <hardware/sensors.h>
 #include "enumeration.h"

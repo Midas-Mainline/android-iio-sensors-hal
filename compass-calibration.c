@@ -17,7 +17,7 @@
 #include <math.h>
 #include <hardware/sensors.h>
 #include <stdio.h>
-#include <utils/Log.h>
+#include <log/log.h>
 #include "calibration.h"
 #include "matrix-ops.h"
 #include "description.h"

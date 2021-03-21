@@ -17,7 +17,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include <utils/Log.h>
+#include <log/log.h>
 #include <hardware/sensors.h>
 #include "common.h"
 #include "calibration.h"

@@ -17,10 +17,11 @@
 #include <stdlib.h>
 #include <fcntl.h>
 #include <sys/ioctl.h>
-#include <utils/Log.h>
+#include <log/log.h>
 #include <hardware/sensors.h>
-#include <utils/Atomic.h>
-#include <linux/android_alarm.h>
+//#include <utils/Atomic.h>
+///#include <linux/android_alarm.h>
+#include <time.h>
 
 #include "common.h"
 #include "utils.h"

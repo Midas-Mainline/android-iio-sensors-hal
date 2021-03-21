@@ -17,7 +17,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <sys/time.h>
-#include <utils/Log.h>
+#include <log/log.h>
 #include <hardware/sensors.h>
 #include "common.h"
 #include "calibration.h"

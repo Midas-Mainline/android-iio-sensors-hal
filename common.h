@@ -17,7 +17,11 @@
 #ifndef __COMMON_H__
 #define __COMMON_H__
 
+//#include <linux/limits.h>
 #include <string.h>
+#include <unistd.h>
+
+#define PATH_MAX 4096
 
 #define MAX_DEVICES	9	/* Check iio devices 0 to MAX_DEVICES-1 */
 #define MAX_SENSORS	12	/* We can handle as many sensors */

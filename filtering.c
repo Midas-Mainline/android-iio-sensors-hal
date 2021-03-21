@@ -17,7 +17,7 @@
 #include <ctype.h>
 #include <stdlib.h>
 #include <hardware/sensors.h>
-#include <utils/Log.h>
+#include <log/log.h>
 #include "common.h"
 #include "filtering.h"
 #include "description.h"

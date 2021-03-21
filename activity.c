@@ -25,7 +25,7 @@
 
 #include <hardware/activity_recognition.h>
 #include <hardware/sensors.h>
-#include <utils/Log.h>
+#include <log/log.h>
 
 #include "activity_event_utils.h"
 

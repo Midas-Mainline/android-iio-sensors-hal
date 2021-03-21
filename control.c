@@ -23,7 +23,7 @@
 #include <sys/epoll.h>
 #include <sys/ioctl.h>
 #include <sys/socket.h>
-#include <utils/Log.h>
+#include <log/log.h>
 #include <hardware/sensors.h>
 #include <linux/ioctl.h>
 #include "control.h"
@@ -756,7 +756,7 @@ static float select_closest_available_rate(int s, float requested_rate)
 	int j;
 	float selected_rate = 0;
 	float max_rate_from_prop = sensor_get_max_freq(s);
-	int dev_num = sensor[s].dev_num;
+	//int dev_num = sensor[s].dev_num;
 
 	if (!sensor[s].avail_freqs_count)
 		return requested_rate;
@@ -1396,6 +1396,12 @@ static int propagate_vsensor_report (int s, sensors_event_t *data)
 	return 1;
 }
 
+enum iio_event_direction {
+	IIO_EV_DIR_EITHER,
+	IIO_EV_DIR_RISING,
+	IIO_EV_DIR_FALLING,
+	IIO_EV_DIR_NONE,
+};
 
 static int propagate_sensor_report (int s, sensors_event_t *data)
 {

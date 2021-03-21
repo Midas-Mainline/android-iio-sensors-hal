@@ -15,7 +15,7 @@
 */
 
 #include <hardware/sensors.h>
-#include <utils/Log.h>
+#include <log/log.h>
 #include "enumeration.h"
 #include "control.h"
 #include "description.h"
